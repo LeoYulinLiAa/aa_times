@@ -6,7 +6,10 @@ html {
 }
 
 body {
-	// ...
+	width: 80%;
+	margin: 0 auto;
+	font-family: $serif;
+	font-size: 12px;
 }
 
 button {
@@ -46,4 +49,28 @@ hr {
 .hr-top {
 	height: 2px;
 	margin-bottom: 1px;
+}
+
+nav button {
+	border-radius: 4px;
+	padding: 7px 9px;
+	border: 1px;
+	line-height: 1rem;
+	margin: 1px;
+}
+
+nav .primary-button {
+	background-color: $light-blue;
+	border: 1px solid;
+	border-color: $blue;
+	color: white;
+	transition: 0.3s;
+
+	&:hover {
+		background-color: $blue;
+	}
+}
+
+.hidden {
+	display: none;
 }

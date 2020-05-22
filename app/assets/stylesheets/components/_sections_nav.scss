@@ -1,0 +1,26 @@
+.section-nav {
+  display: flex;
+  justify-content: center;
+  font-family: $sans-serif;
+  border-bottom: 1px solid;
+  border-color: $light_gray;
+}
+
+.section-nav ul {
+  display: flex;
+  padding: 10px 0;
+}
+
+.section-nav ul li {
+  margin: 0 10px;
+  & a:hover:not(#all-link) {
+    background-color: $light_gray;
+  }
+  & #all-link {
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
